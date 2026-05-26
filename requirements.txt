@@ -1,0 +1,14 @@
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+zhipuai>=2.0.0
+requests>=2.31.0
+sentence-transformers>=2.7.0
+chromadb>=0.5.0
+vosk>=0.3.45
+sounddevice>=0.4.6
+edge-tts>=6.1.0
+python-dotenv>=1.0.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.0.0

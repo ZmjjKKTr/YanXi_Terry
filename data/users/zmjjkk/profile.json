@@ -1,0 +1,85 @@
+{
+  "name": "zmjjkk",
+  "campus": "暨南大学",
+  "default_location": "东门快递柜",
+  "class_schedule": [
+    {
+      "day": "weekday",
+      "start": "08:30",
+      "end": "12:10"
+    },
+    {
+      "day": "weekday",
+      "start": "14:00",
+      "end": "18:00"
+    }
+  ],
+  "auto_accept_enabled": true,
+  "weekend_auto_accept": false,
+  "escalation": {
+    "urgent_keywords": [
+      "医院",
+      "急诊",
+      "手术",
+      "派出所",
+      "住院",
+      "重伤",
+      "抢救"
+    ],
+    "notify_immediately": true
+  },
+  "response_style": "简洁礼貌",
+  "extra_rules": {
+    "快递": "贵重物品请放丰巢柜",
+    "外卖": "放门口鞋柜旁即可"
+  },
+  "known_callers": {
+    "顺丰快递员": {
+      "name": "顺丰",
+      "category": "外卖/快递"
+    },
+    "美团骑手": {
+      "name": "美团",
+      "category": "外卖/快递"
+    },
+    "饿了么骑手": {
+      "name": "饿了么",
+      "category": "外卖/快递"
+    },
+    "妈妈": {
+      "name": "妈妈",
+      "category": "重要来电"
+    },
+    "爸爸": {
+      "name": "爸爸",
+      "category": "重要来电"
+    },
+    "辅导员王老师": {
+      "name": "王老师",
+      "category": "重要来电"
+    }
+  },
+  "auto_rules": {
+    "block": [
+      {
+        "pattern": "公安局",
+        "category": "",
+        "note": "从通话学习"
+      }
+    ],
+    "accept": [
+      {
+        "pattern": "不是，你根据具体事情紧要程度打给我呗",
+        "category": "重要来电",
+        "note": "从通话学习"
+      }
+    ],
+    "notify": [
+      {
+        "pattern": "您好，我是移动客",
+        "category": "诈骗/推销",
+        "note": "从通话学习"
+      }
+    ]
+  }
+}

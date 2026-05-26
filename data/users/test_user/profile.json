@@ -1,0 +1,16 @@
+{
+  "name": "测试用户",
+  "campus": "测试校区",
+  "default_location": "楼下大厅",
+  "class_schedule": [
+    {
+      "day": "weekday",
+      "start": "09:00",
+      "end": "12:00"
+    }
+  ],
+  "auto_accept_enabled": false,
+  "response_style": "详细",
+  "extra_rules": {},
+  "known_callers": {}
+}
