@@ -2,6 +2,19 @@
 
 > 用途：按时间倒序记录每个版本的改动内容，不重复 FEATURES 中的功能清单。
 
+## v3.1 (2026-05-26) — GitHub 发布准备 + 项目整理
+
+- 目录整理：文档移入 `docs/`，语音模块移入 `speech/`，根目录精简至 12 文件
+- 新增 `.gitignore`（排除 key.env / chroma_db / __pycache__ / *.jsonl）
+- 新增 `key.env.example` 环境变量模板（脱敏）
+- 删除旧向量库目录 `chroma_db/` 和 `chroma_db_v2/`
+- 删除旧 `.env.example`（含泄露 API Key）
+- 重写 `docs/README.md`：采用 Hybrid RAG 风格，补充分类表/Pipeline 流程图/API 端点表
+- 简化 `FEATURES.md` / `DEVLOG.md` / `ARCHITECTURE.md`，精简篇幅并标注每个文档的明确用途
+- 清理 `data/users/` 下的运行时数据（calls.jsonl/scams.jsonl/review.jsonl）
+- 清理孤立文件 `说明`
+- 冒烟测试通过：关键词检测 + RAG 检索 + API 路由 + 文件一致性
+
 ## v3.0 (2026-05-20) — 知识库扩充 + 决策转接 + 事务转达流程
 
 - 知识库 300→500 条（外卖 180/诈骗 170/重要 80/普通 70），向量库 chroma_db_v3
